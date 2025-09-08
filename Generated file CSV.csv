@@ -1,0 +1,207 @@
+Transactional ID;Customer ID;Customer Age Group;Product Category;Product Name;Unit Price (R);Quantity Purchased;Total Sale Amount;Date of Purchase;Payment Method
+;;41-60;Dining;Dining Chair;;;;2023/05/18;Debit Card
+;;41-60;Appliances;Washing Machine;;;;2024/02/12;Credit Card
+;;18-25;Bedroom;Bedside Table;;;;2023/09/11;Credit Card
+;;18-25;Appliances;Microwave;;;;2024/01/28;Cash
+;;41-60;Decor;Curtains;;;;2023/10/24;Credit Card
+;;26-40;Living Room;TV Stand;;;;2024/03/04;Cash
+;;26-40;Dining;Dining Table;;;;2023/07/23;Credit Card
+;;18-25;Living Room;Coffee Table;;;;2024/09/26;Credit Card
+;;41-60;Decor;Lamp;;;;2023/12/25;Cash
+;;41-60;Bedroom;Bed Frame;;;;2024/08/13;Credit Card
+;;60+;Decor;Curtains;;;;2023/09/28;Credit Card
+;;18-25;Bedroom;Bedside Table;;;;2024/01/28;Credit Card
+;;41-60;Bedroom;Wardrobe;;;;2023/05/27;Credit Card
+;;41-60;Decor;Lamp;;;;2024/08/16;Cash
+;;18-25;Electronics;Laptop;;;;2023/01/05;Credit Card
+;;41-60;Decor;Curtains;;;;2024/03/19;Debit Card
+;;18-25;Appliances;Fridge;;;;2023/04/12;Cash
+;;60+;Appliances;Oven;;;;2024/11/17;Credit Card
+;;26-40;Dining;Dining Chair;;;;2023/02/09;Credit Card
+;;18-25;Electronics;TV;;;;2024/06/21;Debit Card
+;;18-25;Electronics;TV;;;;2023/09/03;Credit Card
+;;41-60;Decor;Wall Art;;;;2024/10/01;Cash
+;;60+;Dining;Bar Stool;;;;2023/07/07;Credit Card
+;;60+;Dining;Dining Table;;;;2024/01/15;Debit Card
+;;60+;Appliances;Microwave;;;;2023/02/28;Cash
+;;26-40;Dining;Dining Chair;;;;2024/04/04;Credit Card
+;;26-40;Bedroom;Wardrobe;;;;2023/12/30;Credit Card
+;;26-40;Electronics;Tablet;;;;2024/05/20;Cash
+;;26-40;Decor;Wall Art;;;;2023/06/14;Credit Card
+;;26-40;Living Room;Coffee Table;;;;2024/11/08;Debit Card
+;;18-25;Dining;Bar Stool;;;;2023/09/02;Credit Card
+;;26-40;Living Room;Coffee Table;;;;2024/08/11;Credit Card
+;;26-40;Appliances;Microwave;;;;2023/06/01;Credit Card
+;;18-25;Living Room;TV Stand;;;;2024/03/15;Cash
+;;26-40;Appliances;Microwave;;;;2023/02/18;Debit Card
+;;60+;Electronics;Speaker;;;;2024/10/21;Credit Card
+;;41-60;Living Room;Sofa;;;;2023/01/09;Credit Card
+;;41-60;Living Room;Sofa;;;;2024/04/26;Cash
+;;26-40;Bedroom;Wardrobe;;;;2023/12/07;Credit Card
+;;41-60;Decor;Curtains;;;;2024/07/30;Debit Card
+;;26-40;Electronics;Tablet;;;;2023/08/22;Credit Card
+;;60+;Appliances;Oven;;;;2024/09/17;Credit Card
+;;60+;Dining;Dining Table;;;;2023/05/13;Cash
+;;60+;Bedroom;Bed Frame;;;;2024/03/03;Debit Card
+;;60+;Decor;Rug;;;;2023/06/25;Credit Card
+;;18-25;Decor;Rug;;;;2024/10/18;Cash
+;;60+;Appliances;Fridge;;;;2023/01/24;Credit Card
+;;41-60;Appliances;Microwave;;;;2024/04/09;Debit Card
+;;26-40;Dining;Dining Chair;;;;2023/02/11;Cash
+;;18-25;Electronics;Laptop;;;;2024/09/14;Credit Card
+;;41-60;Electronics;TV;;;;2023/08/29;Credit Card
+;;26-40;Decor;Wall Art;;;;2024/11/23;Debit Card
+;;18-25;Bedroom;Bedside Table;;;;2023/05/01;Credit Card
+;;26-40;Electronics;Speaker;;;;2024/01/18;Cash
+;;60+;Bedroom;Bed Frame;;;;2023/07/06;Credit Card
+;;26-40;Electronics;Laptop;;;;2024/12/12;Debit Card
+;;26-40;Living Room;Coffee Table;;;;2023/02/03;Credit Card
+;;26-40;Living Room;Bookshelf;;;;2024/10/29;Cash
+;;26-40;Decor;Rug;;;;2023/06/16;Credit Card
+;;41-60;Decor;Curtains;;;;2024/03/22;Debit Card
+;;18-25;Bedroom;Mattress;;;;2023/11/01;Credit Card
+;;41-60;Bedroom;Bedside Table;;;;2024/08/05;Cash
+;;41-60;Living Room;Bookshelf;;;;2023/07/14;Credit Card
+;;41-60;Appliances;Washing Machine;;;;2024/04/28;Debit Card
+;;18-25;Electronics;Speaker;;;;2023/10/10;Cash
+;;41-60;Appliances;Fridge;;;;2024/09/05;Credit Card
+;;60+;Appliances;Microwave;;;;2023/12/19;Credit Card
+;;60+;Bedroom;Wardrobe;;;;2024/02/23;Debit Card
+;;60+;Bedroom;Bed Frame;;;;2023/05/30;Credit Card
+;;26-40;Bedroom;Mattress;;;;2024/08/18;Cash
+;;26-40;Dining;Dining Chair;;;;2023/07/12;Credit Card
+;;18-25;Living Room;TV Stand;;;;2024/06/03;Debit Card
+;;60+;Appliances;Washing Machine;;;;2023/03/08;Credit Card
+;;60+;Appliances;Washing Machine;;;;2024/11/20;Cash
+;;41-60;Appliances;Microwave;;;;2023/10/25;Credit Card
+;;41-60;Appliances;Washing Machine;;;;2024/01/31;Debit Card
+;;41-60;Living Room;TV Stand;;;;2023/04/14;Credit Card
+;;60+;Dining;Dining Chair;;;;2024/12/28;Cash
+;;18-25;Living Room;TV Stand;;;;2023/09/22;Credit Card
+;;26-40;Appliances;Oven;;;;2024/08/27;Debit Card
+;;26-40;Dining;Bar Stool;;;;2023/02/13;Cash
+;;26-40;Bedroom;Wardrobe;;;;2024/06/07;Credit Card
+;;41-60;Living Room;Bookshelf;;;;2023/02/01;Credit Card
+;;41-60;Dining;Dining Chair;;;;2024/05/04;Debit Card
+;;18-25;Electronics;Speaker;;;;2023/11/12;Cash
+;;18-25;Living Room;Coffee Table;;;;2024/10/06;Credit Card
+;;41-60;Electronics;Tablet;;;;2023/07/21;Credit Card
+;;41-60;Appliances;Microwave;;;;2024/04/16;Debit Card
+;;26-40;Electronics;TV;;;;2023/03/24;Cash
+;;18-25;Electronics;Tablet;;;;2024/01/27;Credit Card
+;;18-25;Appliances;Microwave;;;;2023/08/01;Credit Card
+;;26-40;Bedroom;Bed Frame;;;;2024/05/25;Debit Card
+;;60+;Living Room;Sofa;;;;2023/11/30;Cash
+;;60+;Living Room;Bookshelf;;;;2024/02/20;Credit Card
+;;18-25;Appliances;Fridge;;;;2023/07/17;Credit Card
+;;41-60;Dining;Dining Chair;;;;2024/04/02;Debit Card
+;;60+;Electronics;Tablet;;;;2023/09/08;Cash
+;;60+;Dining;Dining Chair;;;;2024/12/03;Credit Card
+;;60+;Living Room;Sofa;;;;2023/08/14;Credit Card
+;;18-25;Decor;Rug;;;;2024/05/19;Debit Card
+;;60+;Electronics;Tablet;;;;2023/10/14;Cash
+;;18-25;Electronics;Speaker;;;;2024/06/29;Credit Card
+;;26-40;Bedroom;Mattress;;;;2023/01/22;Credit Card
+;;41-60;Electronics;Tablet;;;;2024/04/06;Debit Card
+;;60+;Bedroom;Bedside Table;;;;2023/03/27;Cash
+;;18-25;Electronics;Laptop;;;;2024/08/23;Credit Card
+;;26-40;Bedroom;Bedside Table;;;;2023/02/15;Credit Card
+;;18-25;Appliances;Microwave;;;;2024/10/11;Debit Card
+;;41-60;Bedroom;Mattress;;;;2023/07/01;Cash
+;;18-25;Appliances;Washing Machine;;;;2024/11/26;Credit Card
+;;26-40;Decor;Rug;;;;2023/09/19;Credit Card
+;;41-60;Appliances;Washing Machine;;;;2024/04/24;Debit Card
+;;41-60;Electronics;Speaker;;;;2023/06/20;Cash
+;;26-40;Appliances;Fridge;;;;2024/05/16;Credit Card
+;;41-60;Appliances;Oven;;;;2023/12/08;Credit Card
+;;18-25;Living Room;Coffee Table;;;;2024/01/04;Debit Card
+;;26-40;Appliances;Oven;;;;2023/02/08;Cash
+;;60+;Appliances;Oven;;;;2024/09/13;Credit Card
+;;60+;Appliances;Microwave;;;;2023/03/12;Credit Card
+;;60+;Dining;Dining Chair;;;;2024/11/04;Debit Card
+;;26-40;Appliances;Fridge;;;;2023/06/23;Cash
+;;26-40;Living Room;TV Stand;;;;2024/08/10;Credit Card
+;;18-25;Living Room;Sofa;;;;2023/07/05;Credit Card
+;;18-25;Bedroom;Bed Frame;;;;2024/03/01;Debit Card
+;;26-40;Living Room;Coffee Table;;;;2023/05/07;Cash
+;;60+;Decor;Lamp;;;;2024/04/18;Credit Card
+;;60+;Living Room;Coffee Table;;;;2023/10/13;Credit Card
+;;41-60;Electronics;Tablet;;;;2024/09/29;Debit Card
+;;60+;Bedroom;Wardrobe;;;;2023/01/02;Cash
+;;18-25;Decor;Curtains;;;;2024/02/25;Credit Card
+;;41-60;Dining;Bar Stool;;;;2023/12/21;Credit Card
+;;60+;Living Room;Bookshelf;;;;2024/11/15;Debit Card
+;;26-40;Bedroom;Bed Frame;;;;2023/05/24;Cash
+;;41-60;Bedroom;Wardrobe;;;;2024/07/28;Credit Card
+;;18-25;Dining;Dining Chair;;;;2023/06/12;Credit Card
+;;41-60;Appliances;Oven;;;;2024/01/07;Debit Card
+;;41-60;Bedroom;Bedside Table;;;;2023/03/09;Cash
+;;60+;Decor;Curtains;;;;2024/08/08;Credit Card
+;;26-40;Bedroom;Bed Frame;;;;2023/09/27;Credit Card
+;;18-25;Living Room;TV Stand;;;;2024/04/22;Debit Card
+;;60+;Bedroom;Wardrobe;;;;2023/04/27;Cash
+;;18-25;Bedroom;Mattress;;;;2024/11/07;Credit Card
+;;41-60;Dining;Dining Chair;;;;2023/06/11;Credit Card
+;;26-40;Electronics;Speaker;;;;2024/03/06;Debit Card
+;;60+;Decor;Curtains;;;;2023/10/02;Cash
+;;41-60;Living Room;TV Stand;;;;2024/12/27;Credit Card
+;;41-60;Appliances;Oven;;;;2023/07/10;Credit Card
+;;41-60;Living Room;Bookshelf;;;;2024/03/20;Debit Card
+;;60+;Decor;Wall Art;;;;2023/05/12;Cash
+;;60+;Bedroom;Bedside Table;;;;2024/05/21;Credit Card
+;;60+;Bedroom;Bed Frame;;;;2023/08/15;Credit Card
+;;60+;Appliances;Fridge;;;;2024/01/13;Debit Card
+;;18-25;Decor;Curtains;;;;2023/12/01;Cash
+;;41-60;Appliances;Washing Machine;;;;2024/02/06;Credit Card
+;;18-25;Electronics;Laptop;;;;2023/07/02;Credit Card
+;;18-25;Decor;Lamp;;;;2024/09/25;Debit Card
+;;26-40;Bedroom;Bedside Table;;;;2023/04/01;Cash
+;;41-60;Electronics;Laptop;;;;2024/11/02;Credit Card
+;;26-40;Bedroom;Bed Frame;;;;2023/01/12;Credit Card
+;;41-60;Bedroom;Bedside Table;;;;2024/06/17;Debit Card
+;;41-60;Decor;Curtains;;;;2023/02/27;Cash
+;;60+;Living Room;TV Stand;;;;2024/10/16;Credit Card
+;;41-60;Decor;Curtains;;;;2023/07/24;Credit Card
+;;41-60;Electronics;TV;;;;2024/09/07;Debit Card
+;;41-60;Electronics;TV;;;;2023/04/23;Cash
+;;26-40;Living Room;Sofa;;;;2024/11/18;Credit Card
+;;60+;Decor;Curtains;;;;2023/08/03;Credit Card
+;;26-40;Dining;Dining Table;;;;2024/02/17;Debit Card
+;;18-25;Decor;Lamp;;;;2023/03/26;Cash
+;;18-25;Decor;Lamp;;;;2024/10/22;Credit Card
+;;41-60;Appliances;Microwave;;;;2023/03/13;Credit Card
+;;60+;Dining;Bar Stool;;;;2024/05/03;Debit Card
+;;26-40;Electronics;Laptop;;;;2023/12/16;Cash
+;;41-60;Living Room;Sofa;;;;2024/11/09;Credit Card
+;;18-25;Appliances;Washing Machine;;;;2023/08/28;Credit Card
+;;26-40;Living Room;Sofa;;;;2024/04/10;Debit Card
+;;18-25;Bedroom;Bedside Table;;;;2023/08/22;Cash
+;;60+;Dining;Dining Table;;;;2024/01/17;Credit Card
+;;26-40;Dining;Dining Table;;;;2023/08/11;Credit Card
+;;60+;Bedroom;Wardrobe;;;;2024/06/01;Credit Card
+;;26-40;Appliances;Microwave;;;;2023/03/15;Cash
+;;41-60;Living Room;Bookshelf;;;;2024/02/18;Debit Card
+;;26-40;Electronics;Speaker;;;;2023/10/21;Credit Card
+;;60+;Bedroom;Bedside Table;;;;2024/01/09;Credit Card
+;;60+;Appliances;Oven;;;;2023/04/26;Cash
+;;18-25;Electronics;Laptop;;;;2024/12/07;Credit Card
+;;26-40;Decor;Wall Art;;;;2023/07/30;Debit Card
+;;26-40;Decor;Curtains;;;;2024/08/22;Credit Card
+;;41-60;Electronics;TV;;;;2023/09/17;Credit Card
+;;26-40;Electronics;Speaker;;;;2024/05/13;Cash
+;;26-40;Electronics;Speaker;;;;2023/03/03;Debit Card
+;;26-40;Living;Sofa;;;;2024/06/25;Credit Card
+;;41-60;Electronics;Speaker;;;;2023/10/18;Cash
+;;26-40;Decor;Wall Art;;;;2024/01/24;Credit Card
+;;26-40;Decor;Curtains;;;;2023/04/09;Debit Card
+;;26-40;Bedroom;Bedside Table;;;;2024/02/11;Cash
+;;60+;Appliances;Oven;;;;2023/04/23;Credit Card
+;;26-40;Bedroom;Bedside Table;;;;2024/11/18;Credit Card
+;;41-60;Appliances;Oven;;;;2023/08/03;Debit Card
+;;26-40;Bedroom;Bed Frame;;;;2024/02/17;Credit Card
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;
+;;;;;;;;;

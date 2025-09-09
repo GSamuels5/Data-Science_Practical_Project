@@ -112,3 +112,31 @@ df.insert(5, "Unit Price (R)", unit_price_col)
 df["Total Sale Amount"] = df["Quantity Purchased"] * df["Unit Price (R)"]
 tot_sale_col = df.pop("Total Sale Amount")
 df.insert(7, "Total Sale Amount", tot_sale_col)
+
+'''
+Question 2 – Data Cleaning & Visualization (40 marks)
+Clean your dataset: remove missing/zero values and duplicates.
+
+'''
+#Checking for duplicate values and removing it
+print(df.describe)
+print(df.info())
+
+df = df.drop_duplicates()
+print(df.info())
+
+#Now I will be removing missing values
+df = df.dropna()
+print(df.info())
+
+#Then I will be creating a frequency table for the Product Category
+product_cat = df['Product Category'].value_counts()
+print('This is the frequency table for Product Category column: \n', product_cat)
+
+#Then I will be creating a frequency table for the Payment Method column
+payment_frequency = df['Payment Method'].value_counts()
+print('This is the frequency table for the Payment Method column: \n', payment_frequency)
+
+#Then I will be creating a frequency table for the Payment Method column
+Age_frequency = df['Customer Age Group'].value_counts()
+print('This is the frequency table for the Payment Method column: \n', Age_frequency)

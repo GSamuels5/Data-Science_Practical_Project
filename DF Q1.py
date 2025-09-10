@@ -142,3 +142,81 @@ print('This is the frequency table for the Payment Method column: \n', payment_f
 #Then I will be creating a frequency table for the Payment Method column
 Age_frequency = df['Customer Age Group'].value_counts()
 print('This is the frequency table for the Payment Method column: \n', Age_frequency)
+#A bar chart showing sales per product category.
+SalesPerProduct = df.groupby('Product Category')['Total Sale Amount'].count().reset_index()
+#grouping the coulumns in order tp produce a graph the represents sales per category
+
+plt.figure(figsize=(7,6))
+plt.bar(SalesPerProduct['Product Category'],
+        SalesPerProduct['Total Sale Amount'],color = 'purple' )
+
+#labeling the grapfh for better understanding and visualization. 
+plt.title('Total Sales Per Product Category')
+plt.xlabel('Product Category')
+plt.ylabel('Total Amount of Sales')
+  
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+
+
+#A pie chart showing payment method distribution.
+PayMethod = df.groupby('Payment Method')['Transaction ID'].count()
+plt.figure(figsize=(10,15))
+
+plt.pie(PayMethod, labels = PayMethod.index,
+        autopct='%1.1f%%')#shows the percentages , and shows the portion in the pie chart
+plt.title('The Payment Method Distribution')
+plt.show()
+
+
+#A scatter plot comparing customer age vs. total amount spent.
+#Making a scatter plot using seaborn
+import seaborn as sns
+from pandas.api.types import CategoricalDtype
+
+#arranging the age groups in ascending order
+Ordered_Age = CategoricalDtype(categories=  ["18-25", "26-35", "36-45", "46-60", "60+"]
+                               ,ordered= True)
+df['Customer Age Group'] =df['Customer Age Group'].astype(Ordered_Age)
+
+sns.scatterplot(x='Customer Age Group', y ='Total Sale Amount', hue='Total Sale Amount',size='Total Sale Amount', data=df)
+plt.legend(bbox_to_anchor=(1,1.5),loc='best') # adding the legend to the best possible spot
+plt.show()
+
+#A line chart showing monthly total sales trends.
+# Extract month number and convert to string
+df['Month'] = df['Date of Purchase'].dt.month.astype(str)
+
+#  Map month numbers of months to the name of the month using a dictionary
+month_map = {
+    '9': 'Sep', '10': 'Oct', '11': 'Nov', '12': 'Dec',
+    '1': 'Jan', '2': 'Feb', '3': 'Mar', '4': 'Apr',
+    '5': 'May', '6': 'Jun', '7': 'Jul', '8': 'Aug'
+}
+df['Month Name'] = df['Month'].map(month_map)
+
+#Ensuring that the data is represented in a timely order (Sep 2024 to Aug 2025)
+month_order = ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug']
+month_cat_type = CategoricalDtype(categories=month_order, ordered=True)
+df['Month Name'] = df['Month Name'].astype(month_cat_type)
+
+# Grouping by month and sum sales
+monthly_sales = df.groupby('Month Name')['Total Sale Amount'].sum().reset_index()
+
+# Plot the graph
+sns.set_style("whitegrid")
+plt.figure(figsize=(12, 6))
+sns.lineplot(x='Month Name', y='Total Sale Amount', data=monthly_sales, marker='o', color='purple')
+
+plt.title('Monthly Total Sales Trends (Sep 2024 – Aug 2025)', fontsize=14)
+plt.xlabel('Month')
+plt.ylabel('Total Sale Amount (R)')
+plt.tight_layout()
+plt.show()
+
+
+
+
+
+

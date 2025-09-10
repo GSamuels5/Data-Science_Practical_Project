@@ -4,7 +4,9 @@ Created on Mon Sep  8 10:04:14 2025
 
 @author: Shuaib Boolay
 """
-
+'''
+Question 1 - Data Creation 
+'''
 import pandas as pd
 import numpy as np 
 import matplotlib.pyplot as plt

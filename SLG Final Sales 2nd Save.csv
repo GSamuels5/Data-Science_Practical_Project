@@ -1,0 +1,201 @@
+Transaction ID,Customer ID,Customer Age Group,Product Category,Product Name,Unit Price (R),Quantity Purchased,Total Sale Amount,Date of Purchase,Payment Method,Month,Month Name
+T0001,C074,46-60,Dining,Dining Chair,799,5,3995,2024-12-29,Credit Card,12,Dec
+T0002,C090,26-35,Living Room,Sofa,6800,4,27200,2025-06-04,Credit Card,6,Jun
+T0003,C006,26-35,Appliances,Washing Machine,10500,5,52500,2024-08-29,Credit Card,8,Aug
+T0004,C031,26-35,Living Room,Coffee Table,1400,4,5600,2024-07-03,Credit Card,7,Jul
+T0005,C135,18-25,Electronics,Speaker,200,4,800,2024-09-19,Debit Card,9,Sep
+T0006,C138,46-60,Electronics,TV,6000,3,18000,2025-02-09,Cash,2,Feb
+T0007,C012,60+,Appliances,Washing Machine,10500,1,10500,2024-10-29,Debit Card,10,Oct
+T0008,C145,18-25,Living Room,Coffee Table,1400,2,2800,2024-02-15,Credit Card,2,Feb
+T0009,C057,36-45,Living Room,Bookshelf,700,4,2800,2024-01-10,Credit Card,1,Jan
+T0010,C069,60+,Dining,Dining Chair,799,5,3995,2024-11-22,Cash,11,Nov
+T0011,C002,36-45,Appliances,Oven,13100,2,26200,2024-03-26,Debit Card,3,Mar
+T0012,C044,46-60,Living Room,Bookshelf,700,4,2800,2024-11-25,Debit Card,11,Nov
+T0013,C094,26-35,Bedroom,Bedside Table,800,3,2400,2025-02-01,Debit Card,2,Feb
+T0014,C040,46-60,Bedroom,Bed Frame,3000,2,6000,2024-04-28,Credit Card,4,Apr
+T0015,C052,18-25,Dining,Dining Chair,799,4,3196,2024-07-29,Cash,7,Jul
+T0016,C026,26-35,Decor,Paintings,350,2,700,2025-07-28,Cash,7,Jul
+T0017,C033,36-45,Appliances,Oven,13100,3,39300,2024-02-01,Credit Card,2,Feb
+T0018,C040,26-35,Living Room,Coffee Table,1400,3,4200,2025-06-07,Cash,6,Jun
+T0019,C080,26-35,Dining,Bar Stool,650,2,1300,2025-01-09,Cash,1,Jan
+T0020,C120,26-35,Electronics,TV,6000,4,24000,2025-01-23,Debit Card,1,Jan
+T0021,C084,26-35,Dining,Dining Table,3500,3,10500,2024-04-16,Cash,4,Apr
+T0022,C110,26-35,Bedroom,Wardrobe,2900,4,11600,2025-07-24,Credit Card,7,Jul
+T0023,C032,36-45,Decor,Rug,1299,2,2598,2024-12-10,Cash,12,Dec
+T0024,C108,36-45,Electronics,Speaker,200,3,600,2024-12-27,Debit Card,12,Dec
+T0025,C137,60+,Dining,Dining Chair,799,2,1598,2024-01-16,Cash,1,Jan
+T0026,C089,60+,Appliances,Washing Machine,10500,2,21000,2025-08-06,Credit Card,8,Aug
+T0027,C073,26-35,Decor,Lamp,550,3,1650,2025-04-19,Debit Card,4,Apr
+T0028,C060,60+,Living Room,Coffee Table,1400,5,7000,2024-09-21,Credit Card,9,Sep
+T0029,C003,36-45,Appliances,Oven,13100,4,52400,2024-04-18,Credit Card,4,Apr
+T0030,C109,46-60,Appliances,Washing Machine,10500,4,42000,2024-12-01,Credit Card,12,Dec
+T0031,C131,60+,Decor,Curtains,400,4,1600,2025-07-31,Credit Card,7,Jul
+T0032,C053,36-45,Electronics,Smartphone,5300,4,21200,2024-02-22,Cash,2,Feb
+T0033,C014,36-45,Living Room,Sofa,6800,2,13600,2025-06-14,Cash,6,Jun
+T0034,C108,46-60,Bedroom,Wardrobe,2900,4,11600,2025-03-05,Debit Card,3,Mar
+T0035,C052,36-45,Decor,Curtains,400,4,1600,2024-05-03,Credit Card,5,May
+T0036,C049,26-35,Appliances,Microwave,1100,3,3300,2024-06-21,Cash,6,Jun
+T0037,C110,26-35,Decor,Curtains,400,4,1600,2025-01-30,Debit Card,1,Jan
+T0038,C141,18-25,Electronics,TV,6000,4,24000,2024-02-23,Credit Card,2,Feb
+T0039,C128,46-60,Appliances,Oven,13100,3,39300,2025-03-02,Debit Card,3,Mar
+T0040,C138,60+,Electronics,Smartphone,5300,2,10600,2025-04-05,Cash,4,Apr
+T0041,C126,36-45,Decor,Lamp,550,3,1650,2024-12-23,Debit Card,12,Dec
+T0042,C080,26-35,Dining,Dining Chair,799,5,3995,2024-05-02,Cash,5,May
+T0043,C096,26-35,Living Room,TV Stand,1100,2,2200,2024-04-26,Cash,4,Apr
+T0044,C078,60+,Living Room,TV Stand,1100,4,4400,2025-04-16,Debit Card,4,Apr
+T0045,C046,18-25,Appliances,Fridge,7900,3,23700,2024-07-21,Debit Card,7,Jul
+T0046,C125,36-45,Living Room,Sofa,6800,2,13600,2025-06-05,Debit Card,6,Jun
+T0047,C051,18-25,Living Room,Sofa,6800,3,20400,2024-04-26,Cash,4,Apr
+T0048,C023,36-45,Living Room,Sofa,6800,2,13600,2024-07-10,Cash,7,Jul
+T0049,C089,46-60,Bedroom,Mattress,1600,1,1600,2024-10-31,Cash,10,Oct
+T0050,C031,46-60,Decor,Rug,1299,2,2598,2025-03-12,Credit Card,3,Mar
+T0051,C014,60+,Decor,Lamp,550,2,1100,2025-06-21,Cash,6,Jun
+T0052,C137,18-25,Electronics,Speaker,200,5,1000,2025-01-28,Credit Card,1,Jan
+T0053,C044,46-60,Dining,Dining Table,3500,5,17500,2025-06-01,Credit Card,6,Jun
+T0054,C135,18-25,Decor,Rug,1299,5,6495,2024-06-14,Credit Card,6,Jun
+T0055,C145,26-35,Living Room,Coffee Table,1400,4,5600,2024-05-06,Cash,5,May
+T0056,C017,46-60,Dining,Dining Chair,799,4,3196,2024-02-07,Credit Card,2,Feb
+T0057,C115,26-35,Dining,Dining Chair,799,2,1598,2025-05-03,Credit Card,5,May
+T0058,C016,46-60,Bedroom,Mattress,1600,4,6400,2025-08-25,Cash,8,Aug
+T0059,C059,60+,Living Room,Sofa,6800,3,20400,2024-04-21,Cash,4,Apr
+T0060,C134,26-35,Electronics,TV,6000,5,30000,2025-08-21,Debit Card,8,Aug
+T0061,C079,36-45,Living Room,Sofa,6800,5,34000,2024-08-15,Credit Card,8,Aug
+T0062,C080,46-60,Decor,Rug,1299,2,2598,2024-03-26,Cash,3,Mar
+T0063,C070,46-60,Electronics,TV,6000,4,24000,2024-12-30,Credit Card,12,Dec
+T0064,C113,60+,Dining,Dining Chair,799,2,1598,2025-01-14,Cash,1,Jan
+T0065,C142,36-45,Bedroom,Bedside Table,800,5,4000,2024-09-07,Debit Card,9,Sep
+T0066,C107,60+,Electronics,Speaker,200,5,1000,2024-03-24,Cash,3,Mar
+T0067,C095,60+,Electronics,Laptop,5000,4,20000,2024-01-25,Cash,1,Jan
+T0068,C114,26-35,Decor,Lamp,550,5,2750,2024-08-12,Credit Card,8,Aug
+T0069,C064,60+,Living Room,Coffee Table,1400,2,2800,2025-04-17,Debit Card,4,Apr
+T0070,C089,26-35,Dining,Bar Stool,650,4,2600,2025-03-11,Debit Card,3,Mar
+T0071,C118,46-60,Dining,Dining Table,3500,3,10500,2025-06-09,Debit Card,6,Jun
+T0072,C141,36-45,Appliances,Washing Machine,10500,2,21000,2025-02-22,Credit Card,2,Feb
+T0073,C135,60+,Living Room,TV Stand,1100,4,4400,2024-06-10,Debit Card,6,Jun
+T0074,C033,60+,Appliances,Microwave,1100,3,3300,2025-02-07,Credit Card,2,Feb
+T0075,C082,46-60,Bedroom,Bed Frame,3000,1,3000,2024-03-15,Cash,3,Mar
+T0076,C027,18-25,Appliances,Washing Machine,10500,1,10500,2024-07-07,Debit Card,7,Jul
+T0077,C145,18-25,Living Room,Bookshelf,700,4,2800,2025-05-30,Cash,5,May
+T0078,C100,36-45,Electronics,Laptop,5000,2,10000,2025-01-27,Cash,1,Jan
+T0079,C029,26-35,Appliances,Oven,13100,2,26200,2024-06-29,Cash,6,Jun
+T0080,C029,60+,Bedroom,Wardrobe,2900,4,11600,2024-07-14,Debit Card,7,Jul
+T0081,C011,60+,Dining,Bar Stool,650,3,1950,2024-05-05,Cash,5,May
+T0082,C115,36-45,Electronics,TV,6000,4,24000,2024-12-16,Cash,12,Dec
+T0083,C072,36-45,Electronics,Smartphone,5300,3,15900,2024-04-19,Cash,4,Apr
+T0084,C135,60+,Dining,Bar Stool,650,2,1300,2025-01-01,Cash,1,Jan
+T0085,C032,18-25,Electronics,Speaker,200,2,400,2025-08-15,Cash,8,Aug
+T0086,C147,46-60,Decor,Lamp,550,4,2200,2024-03-21,Credit Card,3,Mar
+T0087,C137,26-35,Bedroom,Wardrobe,2900,5,14500,2024-04-25,Debit Card,4,Apr
+T0088,C126,36-45,Decor,Paintings,350,1,350,2024-04-16,Cash,4,Apr
+T0089,C058,60+,Living Room,TV Stand,1100,1,1100,2025-04-14,Credit Card,4,Apr
+T0090,C042,46-60,Appliances,Washing Machine,10500,1,10500,2024-04-18,Cash,4,Apr
+T0091,C066,46-60,Dining,Dining Chair,799,3,2397,2024-11-15,Debit Card,11,Nov
+T0092,C004,18-25,Bedroom,Bed Frame,3000,1,3000,2025-05-06,Cash,5,May
+T0093,C122,26-35,Appliances,Oven,13100,4,52400,2024-02-19,Credit Card,2,Feb
+T0094,C058,60+,Dining,Dining Chair,799,3,2397,2025-07-05,Debit Card,7,Jul
+T0095,C059,18-25,Living Room,Coffee Table,1400,5,7000,2025-04-05,Credit Card,4,Apr
+T0096,C124,36-45,Dining,Bar Stool,650,5,3250,2024-07-27,Credit Card,7,Jul
+T0097,C007,60+,Appliances,Fridge,7900,5,39500,2024-06-13,Credit Card,6,Jun
+T0098,C123,26-35,Electronics,Speaker,200,2,400,2024-09-03,Cash,9,Sep
+T0099,C021,26-35,Electronics,Laptop,5000,3,15000,2024-10-20,Cash,10,Oct
+T0100,C105,60+,Living Room,TV Stand,1100,4,4400,2024-08-31,Debit Card,8,Aug
+T0101,C034,60+,Bedroom,Mattress,1600,4,6400,2025-02-07,Cash,2,Feb
+T0102,C138,46-60,Living Room,Sofa,6800,4,27200,2024-10-06,Cash,10,Oct
+T0103,C059,36-45,Appliances,Fridge,7900,1,7900,2025-03-10,Credit Card,3,Mar
+T0104,C041,46-60,Bedroom,Mattress,1600,1,1600,2024-05-31,Credit Card,5,May
+T0105,C046,46-60,Appliances,Microwave,1100,5,5500,2025-07-23,Debit Card,7,Jul
+T0106,C104,26-35,Appliances,Oven,13100,2,26200,2025-06-04,Debit Card,6,Jun
+T0107,C111,18-25,Dining,Dining Chair,799,5,3995,2024-09-10,Debit Card,9,Sep
+T0108,C053,26-35,Electronics,Laptop,5000,1,5000,2024-02-28,Cash,2,Feb
+T0109,C047,26-35,Bedroom,Bed Frame,3000,4,12000,2024-05-19,Cash,5,May
+T0110,C145,18-25,Bedroom,Wardrobe,2900,3,8700,2024-04-04,Cash,4,Apr
+T0111,C007,18-25,Appliances,Microwave,1100,3,3300,2025-02-08,Cash,2,Feb
+T0112,C076,60+,Living Room,Coffee Table,1400,1,1400,2025-07-16,Debit Card,7,Jul
+T0113,C022,26-35,Bedroom,Bedside Table,800,5,4000,2024-01-04,Debit Card,1,Jan
+T0114,C047,46-60,Decor,Lamp,550,2,1100,2025-03-15,Cash,3,Mar
+T0115,C006,46-60,Living Room,Sofa,6800,4,27200,2024-05-29,Cash,5,May
+T0116,C123,46-60,Decor,Lamp,550,1,550,2024-07-20,Cash,7,Jul
+T0117,C110,18-25,Bedroom,Bedside Table,800,1,800,2024-11-13,Debit Card,11,Nov
+T0118,C069,18-25,Living Room,TV Stand,1100,4,4400,2025-07-26,Debit Card,7,Jul
+T0119,C054,18-25,Electronics,Smartphone,5300,1,5300,2025-05-18,Debit Card,5,May
+T0120,C136,46-60,Appliances,Microwave,1100,2,2200,2025-01-03,Credit Card,1,Jan
+T0121,C044,26-35,Appliances,Washing Machine,10500,4,42000,2024-12-12,Credit Card,12,Dec
+T0122,C109,36-45,Appliances,Microwave,1100,5,5500,2024-01-31,Credit Card,1,Jan
+T0123,C050,46-60,Living Room,Bookshelf,700,4,2800,2024-11-27,Debit Card,11,Nov
+T0124,C011,60+,Living Room,TV Stand,1100,5,5500,2024-11-02,Cash,11,Nov
+T0125,C121,46-60,Living Room,Bookshelf,700,4,2800,2024-02-20,Credit Card,2,Feb
+T0126,C148,46-60,Electronics,Laptop,5000,1,5000,2024-02-22,Cash,2,Feb
+T0127,C079,60+,Electronics,Smartphone,5300,5,26500,2025-07-07,Debit Card,7,Jul
+T0128,C133,36-45,Living Room,Bookshelf,700,3,2100,2024-05-12,Debit Card,5,May
+T0129,C061,26-35,Living Room,TV Stand,1100,5,5500,2025-04-05,Debit Card,4,Apr
+T0130,C111,18-25,Electronics,TV,6000,2,12000,2024-01-29,Credit Card,1,Jan
+T0131,C017,46-60,Bedroom,Bedside Table,800,1,800,2024-09-04,Debit Card,9,Sep
+T0132,C103,60+,Living Room,Coffee Table,1400,1,1400,2025-01-19,Cash,1,Jan
+T0133,C016,18-25,Appliances,Fridge,7900,5,39500,2024-07-25,Credit Card,7,Jul
+T0134,C008,60+,Bedroom,Bed Frame,3000,2,6000,2024-02-21,Cash,2,Feb
+T0135,C141,18-25,Electronics,Speaker,200,2,400,2024-04-23,Credit Card,4,Apr
+T0136,C006,46-60,Appliances,Fridge,7900,5,39500,2024-06-07,Cash,6,Jun
+T0137,C024,60+,Dining,Dining Table,3500,2,7000,2024-10-07,Cash,10,Oct
+T0138,C031,36-45,Bedroom,Mattress,1600,4,6400,2025-04-04,Debit Card,4,Apr
+T0139,C137,36-45,Dining,Bar Stool,650,1,650,2025-06-10,Debit Card,6,Jun
+T0140,C023,60+,Living Room,Sofa,6800,1,6800,2024-01-29,Cash,1,Jan
+T0141,C023,26-35,Living Room,Sofa,6800,4,27200,2025-06-11,Credit Card,6,Jun
+T0142,C031,60+,Living Room,Bookshelf,700,5,3500,2025-05-13,Credit Card,5,May
+T0143,C012,46-60,Decor,Rug,1299,5,6495,2025-07-06,Debit Card,7,Jul
+T0144,C146,36-45,Bedroom,Bedside Table,800,5,4000,2024-09-04,Debit Card,9,Sep
+T0145,C002,18-25,Dining,Bar Stool,650,1,650,2024-08-25,Credit Card,8,Aug
+T0146,C016,18-25,Living Room,Sofa,6800,2,13600,2024-06-17,Debit Card,6,Jun
+T0147,C109,18-25,Electronics,Laptop,5000,1,5000,2024-02-25,Credit Card,2,Feb
+T0148,C135,36-45,Appliances,Oven,13100,1,13100,2025-06-12,Debit Card,6,Jun
+T0149,C006,36-45,Living Room,Bookshelf,700,3,2100,2024-10-23,Cash,10,Oct
+T0150,C133,18-25,Decor,Paintings,350,4,1400,2024-06-24,Debit Card,6,Jun
+T0151,C036,26-35,Living Room,Bookshelf,700,4,2800,2025-07-06,Credit Card,7,Jul
+T0152,C146,46-60,Decor,Paintings,350,3,1050,2024-05-17,Cash,5,May
+T0153,C052,26-35,Decor,Rug,1299,4,5196,2024-12-07,Cash,12,Dec
+T0154,C039,18-25,Appliances,Microwave,1100,5,5500,2024-11-03,Credit Card,11,Nov
+T0155,C026,46-60,Dining,Bar Stool,650,1,650,2024-07-23,Debit Card,7,Jul
+T0156,C032,26-35,Decor,Lamp,550,4,2200,2024-03-23,Credit Card,3,Mar
+T0157,C109,46-60,Decor,Paintings,350,4,1400,2024-03-06,Debit Card,3,Mar
+T0158,C041,60+,Decor,Paintings,350,4,1400,2024-01-01,Credit Card,1,Jan
+T0159,C043,36-45,Decor,Curtains,400,1,400,2024-09-08,Debit Card,9,Sep
+T0160,C116,26-35,Decor,Curtains,400,3,1200,2024-02-12,Debit Card,2,Feb
+T0161,C049,60+,Appliances,Microwave,1100,1,1100,2025-05-30,Debit Card,5,May
+T0162,C085,36-45,Decor,Paintings,350,5,1750,2024-04-17,Cash,4,Apr
+T0163,C123,46-60,Decor,Paintings,350,5,1750,2024-10-22,Credit Card,10,Oct
+T0164,C100,18-25,Electronics,TV,6000,3,18000,2025-06-08,Debit Card,6,Jun
+T0165,C038,46-60,Appliances,Oven,13100,5,65500,2024-06-19,Credit Card,6,Jun
+T0166,C140,18-25,Electronics,Smartphone,5300,1,5300,2024-05-27,Cash,5,May
+T0167,C120,46-60,Appliances,Fridge,7900,3,23700,2025-05-01,Debit Card,5,May
+T0168,C135,60+,Appliances,Fridge,7900,1,7900,2025-05-31,Cash,5,May
+T0169,C037,18-25,Electronics,Laptop,5000,2,10000,2024-06-27,Cash,6,Jun
+T0170,C135,26-35,Bedroom,Bedside Table,800,2,1600,2024-12-13,Debit Card,12,Dec
+T0171,C129,26-35,Appliances,Oven,13100,5,65500,2024-11-07,Cash,11,Nov
+T0172,C115,46-60,Bedroom,Bed Frame,3000,5,15000,2025-04-19,Credit Card,4,Apr
+T0173,C054,46-60,Bedroom,Wardrobe,2900,2,5800,2024-01-14,Credit Card,1,Jan
+T0174,C076,36-45,Living Room,TV Stand,1100,2,2200,2024-05-12,Credit Card,5,May
+T0175,C144,26-35,Dining,Dining Table,3500,2,7000,2024-11-17,Credit Card,11,Nov
+T0176,C063,18-25,Living Room,TV Stand,1100,3,3300,2025-05-06,Credit Card,5,May
+T0177,C032,60+,Living Room,Bookshelf,700,2,1400,2024-05-09,Credit Card,5,May
+T0178,C091,36-45,Decor,Lamp,550,1,550,2024-11-21,Debit Card,11,Nov
+T0179,C066,26-35,Decor,Lamp,550,2,1100,2025-06-11,Cash,6,Jun
+T0180,C125,36-45,Dining,Dining Chair,799,1,799,2024-02-16,Cash,2,Feb
+T0181,C120,18-25,Living Room,Bookshelf,700,5,3500,2025-03-19,Credit Card,3,Mar
+T0182,C089,36-45,Decor,Curtains,400,4,1600,2024-12-13,Cash,12,Dec
+T0183,C124,46-60,Dining,Dining Table,3500,2,7000,2024-03-06,Cash,3,Mar
+T0184,C021,18-25,Dining,Dining Table,3500,1,3500,2025-08-21,Cash,8,Aug
+T0185,C020,18-25,Appliances,Washing Machine,10500,5,52500,2024-07-10,Debit Card,7,Jul
+T0186,C075,18-25,Dining,Bar Stool,650,4,2600,2024-12-22,Debit Card,12,Dec
+T0187,C098,60+,Dining,Dining Chair,799,2,1598,2024-03-31,Credit Card,3,Mar
+T0188,C104,36-45,Appliances,Fridge,7900,1,7900,2025-01-11,Cash,1,Jan
+T0189,C051,46-60,Appliances,Microwave,1100,4,4400,2024-11-20,Debit Card,11,Nov
+T0190,C139,60+,Dining,Dining Chair,799,2,1598,2025-01-19,Debit Card,1,Jan
+T0191,C121,36-45,Living Room,TV Stand,1100,3,3300,2025-04-30,Cash,4,Apr
+T0192,C029,36-45,Bedroom,Bed Frame,3000,2,6000,2025-03-09,Credit Card,3,Mar
+T0193,C091,46-60,Electronics,Speaker,200,1,200,2025-07-05,Debit Card,7,Jul
+T0194,C109,60+,Decor,Curtains,400,5,2000,2025-04-18,Debit Card,4,Apr
+T0195,C114,18-25,Bedroom,Bedside Table,800,1,800,2025-05-22,Debit Card,5,May
+T0196,C070,60+,Appliances,Microwave,1100,2,2200,2025-02-27,Credit Card,2,Feb
+T0197,C008,18-25,Electronics,TV,6000,2,12000,2024-06-15,Cash,6,Jun
+T0198,C086,36-45,Living Room,Coffee Table,1400,2,2800,2024-12-27,Debit Card,12,Dec
+T0199,C008,26-35,Living Room,Sofa,6800,1,6800,2024-05-08,Cash,5,May
+T0200,C043,36-45,Living Room,Sofa,6800,4,27200,2025-04-15,Credit Card,4,Apr

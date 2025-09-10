@@ -12,6 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # df = pd.read_csv("C:/Users/SD 2/Documents/Data Science Project/Generated file CSV.csv")
+# df = pd.read_csv("SLG Final Sales Save.csv")
 
 n = 200 # number of rows
 
@@ -44,33 +45,33 @@ products = [np.random.choice(product_mapping[cat])for cat in categories]
 
 # This dictionary assigns a fixed Unit Price (R) to every product name.
 unit_price_mapping = {
-    "Smartphone": 5000,
-    "Oven": 20000,
-    "Washing Machine": 12000,
-    "Sofa": 7000,
-    "Dining Table": 4500,
-    "Dining Chair": 1000,
+    "Smartphone": 5300,
+    "Oven": 13100,
+    "Washing Machine": 10500,
+    "Sofa": 6800,
+    "Dining Table": 3500,
+    "Dining Chair": 799,
     "Bed Frame": 3000,
-    "TV": 2000,
-    "TV Stand": 500,
-    "Coffee Table": 1000,
+    "TV": 6000,
+    "TV Stand": 1100,
+    "Coffee Table": 1400,
     "Lamp": 550,
     "Paintings": 350,
-    "Wardrobe": 800,
-    "Microwave": 4000,
-    "Fridge": 5000,
-    "Bar Stool": 500,
+    "Wardrobe": 2900,
+    "Microwave": 1100,
+    "Fridge": 7900,
+    "Bar Stool": 650,
     "Bedside Table": 800,
-    "Mattress": 3000,
+    "Mattress": 1600,
     "Laptop": 5000,
     "Speaker": 200,
     "Curtains": 400,
-    "Bookshelf": 1200,
-    "Rug": 800,
+    "Bookshelf": 700,
+    "Rug": 1299,
     }
 
-# Random integer quantity between 1 and 7 (upper bound 8 is exclusive) for each transaction.
-quantity = np.random.randint(1,8,n)
+# Random integer quantity between 1 and 5 (upper bound 6 is exclusive) for each transaction.
+quantity = np.random.randint(1,6,n)
 
 # Creates a date range and picks a random offset of days for each transaction
 # random_dates becomes an array of random dates between start_date and end_date - 1 day
@@ -114,6 +115,9 @@ df.insert(5, "Unit Price (R)", unit_price_col)
 df["Total Sale Amount"] = df["Quantity Purchased"] * df["Unit Price (R)"]
 tot_sale_col = df.pop("Total Sale Amount")
 df.insert(7, "Total Sale Amount", tot_sale_col)
+
+df = pd.read_csv("SLG Final Sales Save.csv")
+df["Date of Purchase"] = pd.to_datetime(df["Date of Purchase"], errors="coerce")
 
 '''
 Question 2 – Data Cleaning & Visualization (40 marks)
@@ -161,10 +165,8 @@ plt.show()
 
 
 #A pie chart showing payment method distribution.
-PayMethod = df.groupby('Payment Method')['Transaction ID'].count()
 plt.figure(figsize=(10,15))
-
-plt.pie(PayMethod, labels = PayMethod.index,
+plt.pie(payment_frequency, labels = payment_frequency.index,
         autopct='%1.1f%%')#shows the percentages , and shows the portion in the pie chart
 plt.title('The Payment Method Distribution')
 plt.show()
@@ -215,8 +217,8 @@ plt.ylabel('Total Sale Amount (R)')
 plt.tight_layout()
 plt.show()
 
-
-
-
+# saves randomized file as a csv file excluding the index as a column
+df.to_csv("SLG Final Sales 2nd Save.csv", index=False)
+df = pd.read_csv("SLG Final Sales 2nd Save.csv")
 
 

@@ -87,7 +87,7 @@ random_days = np.random.randint(0, n_days, n)
 random_dates = start_date + pd.to_timedelta(random_days, unit="d")
 
 # Randomly assigns a payment method for each transaction.
-payment_method = ["Credit Card", "Debit Card", "Cash"]
+payment_method = ["Credit Card", "Cash", "EFT", "Store Account"]
 payment_method_column = np.random.choice(payment_method, n)
 
 df = pd.DataFrame({
@@ -116,8 +116,8 @@ df["Total Sale Amount"] = df["Quantity Purchased"] * df["Unit Price (R)"]
 tot_sale_col = df.pop("Total Sale Amount")
 df.insert(7, "Total Sale Amount", tot_sale_col)
 
-df = pd.read_csv("SLG Final Sales Save.csv")
-df["Date of Purchase"] = pd.to_datetime(df["Date of Purchase"], errors="coerce")
+# df = pd.read_csv("SLG Final Sales 2nd Save.csv")
+# df["Date of Purchase"] = pd.to_datetime(df["Date of Purchase"], errors="coerce")
 
 '''
 Question 2 – Data Cleaning & Visualization (40 marks)
@@ -219,6 +219,6 @@ plt.show()
 
 # saves randomized file as a csv file excluding the index as a column
 df.to_csv("SLG Final Sales 2nd Save.csv", index=False)
-df = pd.read_csv("SLG Final Sales 2nd Save.csv")
+# df = pd.read_csv("SLG Final Sales 2nd Save.csv")
 
 

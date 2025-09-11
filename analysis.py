@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Sep  5 14:08:53 2025
-
+Created on Thu Sep 11 11:47:13 2025
+ 
+@author: Luche Louw
 @author: Ghamzah Samuels
+@author: Shuaib Boolay
 """
 
 import pandas as pd
@@ -10,9 +12,7 @@ df = pd.read_csv('C:/Users/SoftwareDeveloper3/Documents/Practical Modules/Group 
 
 
 """
-Created on Thu Sep 11 11:47:13 2025
- 
-@author: Luche Louw
+
 """
  
 df=df.drop_duplicates()

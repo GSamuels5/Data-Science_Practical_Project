@@ -10,10 +10,6 @@ Created on Thu Sep 11 11:47:13 2025
 import pandas as pd
 df = pd.read_csv('C:/Users/SoftwareDeveloper3/Documents/Practical Modules/Group project/lewis_furniture_sales.csv')
 
-
-"""
-
-"""
  
 df=df.drop_duplicates()
  

@@ -8,12 +8,16 @@ Created on Thu Sep 11 11:47:13 2025
 """
 
 import pandas as pd
-df = pd.read_csv('C:/Users/SoftwareDeveloper3/Documents/Practical Modules/Group project/lewis_furniture_sales.csv')
+df = pd.read_csv('C:/Users/SD 1/Group_project/Data-Science_Practical_Project/lewis_furniture_sales.csv')
 
  
 df=df.drop_duplicates()
- 
 df.dropna()
+print(df.isnull().sum())
+ 
+print(df.head())
+print(df.describe())
+print(df.info())
 
 
 #Revenue Analysis (15 marks)
@@ -49,8 +53,82 @@ plt.title("This is the top 5 Products by Revenue")
 plt.gca().invert_yaxis()
 plt.show
 
+
 #c. Which product category contributed the most to total store revenue?
 Top_cat = df.groupby('Product Category')['Total Sale Amount (R)'].max().sort_values(ascending=False)
 print("The product catergory with the most revenue: \n", Top_cat.head(1))
+
+#---------------------------------------------------------------------------------------------------------------------------------
+#question 4.2
+#a) Calculate average spend per customer age group.
+
+AverageSpent = df.groupby('Customer Age Group')['Total Sale Amount (R)'].sum().sort_values(ascending=False)
+print(f"\nThe average spent per customer age group is:\n{AverageSpent}" )
+
+#b) Using a dictionary, map each age group to their preferred payment method (most frequently used).
+
+preferred_payment = df.groupby('Customer Age Group')['Payment Method'].agg(lambda x :x.mode()[0])# Lambda allowes you to define a function with one input and produces its output
+preferred_payment = preferred_payment.to_dict()
+print('The preferred payment method by age group is :' , preferred_payment)
+
+#c) Which age group generates the highest average transaction value?
+top_agegroup= AverageSpent.idxmax()
+top_amount=AverageSpent.max()
+print ('The age group that generated the highest average transaction value is', top_agegroup,' and they spent a total of ',top_amount)
+#---------------------------------------------------------------------------------------------------------------------------------
+#Quetion 4.3
+#a) Group sales data by month and calculate ,Group sales data by month and calculate, 
+#and Average sales per transaction per month
+
+df['Date of Purchase'] = pd.to_datetime(df['Date of Purchase'], errors='coerce')
+df['Month Num'] = df['Date of Purchase'].dt.month # converting full date to month
+df['Month Name'] = df['Date of Purchase'].dt.strftime('%b')#indicatind that month will bea string
+
+SalesbyMonth = df.groupby('Month Num')['Total Sale Amount (R)'].sum() #grouping the month by the sales and adding it
+print("This is sales per month : ", SalesbyMonth)
+
+# Count transactions per month
+TransactionsPerMonth = df.groupby('Month Num')['Transaction ID'].count()
+# Average sale per transaction per month
+AvgPerTransaction = SalesbyMonth / TransactionsPerMonth
+print("this is the average per transaction:", AvgPerTransaction)
+
+# Get month labels in order , to track seasonal changes
+month_labels = df.groupby('Month Num')['Month Name'].first()
+
+#------------------------------------------------------------
+#4.3b)Use a line graph with dual axes (left = total sales, right = average sales).
+import matplotlib.pyplot as plt
+
+Months = df['Month Name']
+
+fig, ax1 = plt.subplots(figsize=(12,6))
+# Making the Left y-axis Total Sales
+ax1.plot(month_labels, SalesbyMonth.values, marker='s', color='red', label='Total Sales')
+ax1.set_xlabel('Month')
+ax1.set_ylabel('Total Sales (R)', color='red')
+ax1.tick_params(axis='y', labelcolor='red')
+
+#Making the Right y-axis: Average Sale per Transaction
+#creating a second y axis
+ax2 = ax1.twinx()
+ax2.plot(month_labels, AvgPerTransaction.values, marker='o', color='orange', label='Average Sale per Transaction')
+ax2.set_ylabel('Average Sale per Transaction (R)', color='orange')
+ax2.tick_params(axis='y', labelcolor='orange')
+
+#Creating more labels for better visualization
+plt.title('Monthly Sales Analysis (Total vs Average per Transaction)')
+ax1.grid(True)
+fig.tight_layout()
+plt.show()
+
+
+
+
+
+
+
+
+
 
 

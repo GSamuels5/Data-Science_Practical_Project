@@ -145,7 +145,7 @@ Age_frequency = df['Customer Age Group'].value_counts()
 print('This is the frequency table for the Payment Method column: \n', Age_frequency)
 
 #Creating a barchart showing sales per product category.
-SalesPerProduct = df.groupby('Product Category')['Total Sale Amount'].count().reset_index()
+SalesPerProduct = df.groupby('Product Category')['Total Sale Amount'].sum().reset_index()
 #grouping the columns in order to produce a graph that represents sales per category.
 
 plt.figure(figsize=(7,6))

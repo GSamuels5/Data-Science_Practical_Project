@@ -172,10 +172,11 @@ plt.title('The Payment Method Distribution')
 plt.show()
 
 
-#A scatter plot comparing customer age vs. total amount spent.
-#Making a scatter plot using seaborn
+'''A scatter plot comparing customer age vs. total amount spent.
+The scatter plot wil be made using seaborn.
+And the age age will be arranged in ascending order ''''
 
-#arranging the age groups in ascending order
+
 Ordered_Age = CategoricalDtype(categories=  ["18-25", "26-35", "36-45", "46-60", "60+"]
                                ,ordered= True)
 df['Customer Age Group'] =df['Customer Age Group'].astype(Ordered_Age)

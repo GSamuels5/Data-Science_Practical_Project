@@ -155,7 +155,7 @@ plt.bar(SalesPerProduct['Product Category'],
 #labeling the grapfh for better understanding and visualization. 
 plt.title('Total Sales Per Product Category')
 plt.xlabel('Product Category')
-plt.ylabel('Total Amount of Sales')
+plt.ylabel('Total Sales Amount(R)')
   
 plt.xticks(rotation=45)
 plt.tight_layout()

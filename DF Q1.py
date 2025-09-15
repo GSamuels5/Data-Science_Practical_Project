@@ -79,7 +79,7 @@ quantity = np.random.randint(1,6,n)
 # .days extracts the number of days in that period.
 # np.random.randint() generates n integers between 0 and n_days 
 # Each integer represents how many days after the start date a transaction happened
-start_date = pd.to_datetime("2024-01-01")
+start_date = pd.to_datetime("2024-09-01")
 end_date = pd.to_datetime("2025-09-01")
 n_days = (end_date - start_date).days
 random_days = np.random.randint(0, n_days, n)

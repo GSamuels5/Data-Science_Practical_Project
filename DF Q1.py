@@ -174,7 +174,7 @@ plt.show()
 
 '''A scatter plot comparing customer age vs. total amount spent.
 The scatter plot wil be made using seaborn.
-And the age age will be arranged in ascending order ''''
+And the age age will be arranged in ascending order '''
 
 
 Ordered_Age = CategoricalDtype(categories=  ["18-25", "26-35", "36-45", "46-60", "60+"]

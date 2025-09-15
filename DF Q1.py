@@ -10,6 +10,8 @@ Question 1 - Data Creation
 import pandas as pd
 import numpy as np 
 import matplotlib.pyplot as plt
+import seaborn as sns
+from pandas.api.types import CategoricalDtype
 
 n = 200 # number of rows
 
@@ -172,8 +174,6 @@ plt.show()
 
 #A scatter plot comparing customer age vs. total amount spent.
 #Making a scatter plot using seaborn
-import seaborn as sns
-from pandas.api.types import CategoricalDtype
 
 #arranging the age groups in ascending order
 Ordered_Age = CategoricalDtype(categories=  ["18-25", "26-35", "36-45", "46-60", "60+"]

@@ -181,7 +181,10 @@ Ordered_Age = CategoricalDtype(categories=  ["18-25", "26-35", "36-45", "46-60",
                                ,ordered= True)
 df['Customer Age Group'] =df['Customer Age Group'].astype(Ordered_Age)
 
-sns.scatterplot(x='Customer Age Group', y ='Total Sale Amount', hue='Total Sale Amount',size='Total Sale Amount', data=df)
+sns.scatterplot(x ='Customer Age Group', y = 'Total Sale Amount',
+                hue ='Total Sale Amount',
+                size='Total Sale Amount',
+                data = df)
 plt.legend(bbox_to_anchor=(1,1.5),loc='best') # adding the legend to the best possible spot
 plt.show()
 

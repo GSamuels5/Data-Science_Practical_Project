@@ -122,7 +122,56 @@ ax1.grid(True)
 fig.tight_layout()
 plt.show()
 
+# ===============================
+# 4.4 Profit & Margin Analysis
+# ===============================
 
+# a.)
+multi_map = {
+    "Bedroom": 0.65, 
+    "Living Room": 0.60, 
+    "Dining": 0.55, 
+    "Appliances": 0.70, 
+    "Electronics": 0.75, 
+    "Décor": 0.50
+    }
+
+multiplier = df["Product Category"].map(multi_map)
+df["Profit"] = df["Total Sale Amount (R)"] * (1 - multiplier)
+
+# b.)
+cat_profit = df.groupby("Product Category")["Profit"].sum().reset_index()
+cat_profit["Product Category Revenue"] = cat_profit["Product Category"].map(Top_cat)
+cat_profit.sort_values(by="Profit", ascending=False)
+print(f"\nThe Profit generated from each Product Category:\n{cat_profit}")
+print(f"\nThe Revenue generated from each Product Category:\n{Top_cat}")
+
+# c.)
+print(f"\nThe Product Category which generated the most Revenue:\n{Top_cat.head(1)}")
+print(f"\nHowever the Product Category which generated the most Profit:\n{cat_profit.head(1)}")
+print("\n'Bedroom' Product Category generated the most Revenue for Lewis because it was baught at a higher quantity than the rest of the Product Categories, however 'Appliances' generated the most Profit becuase profit is calculated by total revenue - exspenses, it simply means that the exspenses for 'Bedroom' Category is alot more than 'Appliances' Category")
+print("Meaning it cost Lewis alot of money to stock Products for 'Bedroom' Category")
+
+# ========================================
+# 4.5  Customer Loyalty & Repeat Purchases 
+# ========================================
+
+# a.)
+uni_cus = df["Customer ID"].nunique()
+print(f"\nThe Amount of unique customers in the dataset are:\n{uni_cus}")
+
+# b.)
+top_5_cus = df.groupby("Customer ID")["Total Sale Amount (R)"].sum()
+print(f"\nTop 5 customers by total spent\n{top_5_cus.head()}")
+
+# c.)
+multi_pur_cus = len(df) - uni_cus
+multi_pur_cus2 = multi_pur_cus/len(df) * 100
+print(f"\n The percentage of customers who made 2 or more purchases:\n{multi_pur_cus2}%")
+
+# d.)
+print("\nLook at the customers that have purchased more than once at the store and offer them in store credit, a complementary gift card or 15% off their next purchase.")
+print("And for the customers that haven't returned to our store we can introduce a loyalty point system to get them to want to return.")
 
 
 

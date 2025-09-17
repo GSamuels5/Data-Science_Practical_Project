@@ -8,7 +8,7 @@ Created on Thu Sep 11 11:47:13 2025
 """
 
 import pandas as pd
-df = pd.read_csv('C:/Users/SD 1/Group_project/Data-Science_Practical_Project/lewis_furniture_sales.csv')
+df = pd.read_csv('C:/Users/SoftwareDeveloper3/Documents/Practical Modules/Group project/lewis_furniture_sales.csv')
 
  
 df=df.drop_duplicates()
@@ -173,11 +173,35 @@ print(f"\n The percentage of customers who made 2 or more purchases:\n{multi_pur
 print("\nLook at the customers that have purchased more than once at the store and offer them in store credit, a complementary gift card or 15% off their next purchase.")
 print("And for the customers that haven't returned to our store we can introduce a loyalty point system to get them to want to return.")
 
+# ========================================
+# 4.6 Predictive Insight Challenge
+# ========================================
+
+import numpy as np
 
 
+#Group revelant columns
+grouped = df.groupby("Product Category")['Total Sale Amount (R)']
 
+#turning the dataframe into a numerical array and extracting electronics
+eft = grouped.get_group("Electronics").to_numpy()
+#Mean
+mean_val = np.mean(eft)
+print(f"This is the Mean of the Electronics:  {mean_val:.2f}")
 
+#Median
+median_val = np.median(eft)
+print(f"This is the Median of the Electronics:  {median_val:.2f}")
 
+#Standard Deviation of transaction amounts
+std_val = np.std(eft)
+print(f"This is the Standard of the Electronics:  {std_val:.2f}")
 
+#.B Based on this distribution, predict whether Electronics sales are more volatile than other categories.
+print(f"Since the standard deviation({std_val:.2f}) is high and close to the mean ( {mean_val:.2f})then that means the Electronic sales are relatively volatile compared to the other sales.")
 
+# C. Suggest how Lewis Furniture could reduce volatility in sales (e.g., discounts, bundles, loyalty programs).
+print("Lewis can give a a discount on electronics when customers buy more than two electronic products")
+print("They can have raffle prizes to win in months when electtronics prices was low and they must buy an electronic product.")
+print("More loyalty points given to customers who buy electronics which is priced over 10K ")
 

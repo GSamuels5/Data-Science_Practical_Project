@@ -219,8 +219,10 @@ plt.ylabel('Total Sale Amount (R)')
 plt.tight_layout()
 plt.show()
 
+df.drop(["Month", "Month Name"], axis=1, inplace=True)
+
 # saves randomized file as a csv file excluding the index as a column
-# df.to_csv("SLG Final Sales 2nd Save.csv", index=False)
-# df = pd.read_csv("SLG Final Sales 2nd Save.csv")
+#df.to_csv("SLG Final Sales 2nd Save.csv", index=False)
+#df = pd.read_csv("SLG Final Sales 2nd Save.csv")
 
 

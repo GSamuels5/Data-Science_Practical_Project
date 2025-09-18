@@ -8,7 +8,7 @@ Created on Thu Sep 11 11:47:13 2025
 """
 
 import pandas as pd
-df = pd.read_csv('C:/Users/SoftwareDeveloper3/Documents/Practical Modules/Group project/lewis_furniture_sales.csv')
+df = pd.read_csv('C:/Users/SD 1/Group_project/Data-Science_Practical_Project/lewis_furniture_sales.csv')
 
  
 df=df.drop_duplicates()
@@ -49,7 +49,7 @@ plt.figure(figsize=(8, 9))
 bottom_3.plot(kind='barh', color="green")
 plt.xlabel("Total Revenue")
 plt.ylabel("Products")
-plt.title("This is the top 5 Products by Revenue")
+plt.title("This is the bottom 3 Products by Revenue")
 plt.gca().invert_yaxis()
 plt.show
 
@@ -142,7 +142,7 @@ df["Profit"] = df["Total Sale Amount (R)"] * (1 - multiplier)
 # b.)
 cat_profit = df.groupby("Product Category")["Profit"].sum().reset_index()
 cat_profit["Product Category Revenue"] = cat_profit["Product Category"].map(Top_cat)
-cat_profit.sort_values(by="Profit", ascending=False)
+cat_profit = cat_profit.sort_values(by="Profit", ascending=False)
 print(f"\nThe Profit generated from each Product Category:\n{cat_profit}")
 print(f"\nThe Revenue generated from each Product Category:\n{Top_cat}")
 

@@ -146,6 +146,7 @@ print('This is the frequency table for the Payment Method column: \n', payment_f
 Age_frequency = df['Customer Age Group'].value_counts()
 print('This is the frequency table for the Payment Method column: \n', Age_frequency)
 
+#==============================================================================================================================
 #Creating a barchart showing sales per product category.
 SalesPerProduct = df.groupby('Product Category')['Total Sale Amount'].sum().reset_index()
 #grouping the columns in order to produce a graph that represents sales per category.
@@ -163,7 +164,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
-
+#==================================================================================================================================
 #A pie chart showing payment method distribution.
 plt.figure(figsize=(10,15))
 plt.pie(payment_frequency, labels = payment_frequency.index,
@@ -171,7 +172,7 @@ plt.pie(payment_frequency, labels = payment_frequency.index,
 plt.title('The Payment Method Distribution')
 plt.show()
 
-
+#======================================================================================================================================
 '''A scatter plot comparing customer age vs. total amount spent.
 The scatter plot wil be made using seaborn.
 And the age age will be arranged in ascending order '''
@@ -187,6 +188,8 @@ sns.scatterplot(x ='Customer Age Group', y = 'Total Sale Amount',
                 data = df)
 plt.legend(bbox_to_anchor=(1,1.5),loc='best') # adding the legend to the best possible spot
 plt.show()
+
+#======================================================================================================================================
 
 #A line chart showing monthly total sales trends.
 # Extract month number and convert to string

@@ -8,7 +8,7 @@ Created on Thu Sep 11 11:47:13 2025
 """
 
 import pandas as pd
-df = pd.read_csv('C:/Users/SD 1/Group_project/Data-Science_Practical_Project/lewis_furniture_sales.csv')
+df = pd.read_csv('C:/Users/SoftwareDeveloper3/Documents/Practical Modules/Group project/lewis_furniture_sales.csv')
 
  
 df=df.drop_duplicates()
@@ -36,23 +36,24 @@ print("This is my bottom 3 in dictionary format :\n", Bottom_3)
 
 import matplotlib.pyplot as plt
 #Horizontal bar graph for top 5 products by revenue
-plt.figure(figsize=(8, 9))
-top_items.plot(kind='barh', color="red")
-plt.xlabel("Total Revenue")
-plt.ylabel("Products")
-plt.title("This is the top 5 Products by Revenue")
+# Combine top 5 and bottom 3 into one Series
+combined = pd.concat([top_items, bottom_3])
 
-plt.gca().invert_yaxis()#moves the top product on top
-plt.show
-#Horizontal bar graph for bottom 3 products by revenue
-plt.figure(figsize=(8, 9))
-bottom_3.plot(kind='barh', color="green")
-plt.xlabel("Total Revenue")
+# Create color list: red for top 5, green for bottom 3
+colors = ["green"] * len(top_items) + ["red"] * len(bottom_3)
+
+# Horizontal bar graph for combined products
+plt.figure(figsize=(10, 8))
+combined.plot(kind='barh', color=colors)
+
+plt.xlabel("Total Revenue (R)")
 plt.ylabel("Products")
-plt.title("This is the bottom 3 Products by Revenue")
+plt.title("Top 5 vs Bottom 3 Products by Revenue")
+
+# Put highest revenue item at the top
 plt.gca().invert_yaxis()
-plt.show
 
+plt.show()
 
 #c. Which product category contributed the most to total store revenue?
 Top_cat = df.groupby('Product Category')['Total Sale Amount (R)'].max().sort_values(ascending=False)

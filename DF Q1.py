@@ -167,7 +167,7 @@ plt.show()
 #A pie chart showing payment method distribution.
 plt.figure(figsize=(10,15))
 plt.pie(payment_frequency, labels = payment_frequency.index,
-        autopct='%1.1f%%')#shows the percentages , and shows the portion in the pie chart
+        autopct='%1.3f%%')#shows the percentages , and shows the portion in the pie chart
 plt.title('The Payment Method Distribution')
 plt.show()
 

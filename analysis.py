@@ -163,6 +163,7 @@ print(f"\nThe Amount of unique customers in the dataset are:\n{uni_cus}")
 
 # b.)
 top_5_cus = df.groupby("Customer ID")["Total Sale Amount (R)"].sum()
+top_5_cus = top_5_cus.sort_values(ascending=False)
 print(f"\nTop 5 customers by total spent\n{top_5_cus.head()}")
 
 # c.)

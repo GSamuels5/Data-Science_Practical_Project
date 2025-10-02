@@ -63,7 +63,7 @@ print("The product catergory with the most revenue: \n", Top_cat.head(1))
 #question 4.2
 #a) Calculate average spend per customer age group.
 
-AverageSpent = df.groupby('Customer Age Group')['Total Sale Amount (R)'].sum().sort_values(ascending=False)
+AverageSpent = df.groupby('Customer Age Group')['Total Sale Amount (R)'].mean().sort_values(ascending=False)
 print(f"\nThe average spent per customer age group is:\n{AverageSpent}" )
 
 #b) Using a dictionary, map each age group to their preferred payment method (most frequently used).

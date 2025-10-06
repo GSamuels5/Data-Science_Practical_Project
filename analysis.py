@@ -56,7 +56,7 @@ plt.gca().invert_yaxis()
 plt.show()
 
 #c. Which product category contributed the most to total store revenue?
-Top_cat = df.groupby('Product Category')['Total Sale Amount (R)'].max().sort_values(ascending=False)
+Top_cat = df.groupby('Product Category')['Total Sale Amount (R)'].sum().sort_values(ascending=False)
 print("The product catergory with the most revenue: \n", Top_cat.head(1))
 
 #---------------------------------------------------------------------------------------------------------------------------------
@@ -141,15 +141,15 @@ multiplier = df["Product Category"].map(multi_map)
 df["Profit"] = df["Total Sale Amount (R)"] * (1 - multiplier)
 
 # b.)
-rev = df.groupby("Product Category")["Total Sale Amount (R)"].sum()
+
 cat_profit = df.groupby("Product Category")["Profit"].sum().reset_index()
-cat_profit["Product Category Revenue"] = cat_profit["Product Category"].map(rev)
-cat_profit = cat_profit.sort_values(by="Profit", ascending=False)
+cat_profit["Product Category Revenue"] = cat_profit["Product Category"].map(Top_cat)
+cat_profit = round(cat_profit.sort_values(by="Profit", ascending=False), 2)
 print(f"\nThe Profit generated from each Product Category:\n{cat_profit}")
-print(f"\nThe Revenue generated from each Product Category:\n{rev}")
+print(f"\nThe Revenue generated from each Product Category:\n{Top_cat}")
 
 # c.)
-print(f"\nThe Product Category which generated the most Revenue:\n{rev.head(1)}")
+print(f"\nThe Product Category which generated the most Revenue:\n{Top_cat.head(1)}")
 print(f"\nHowever the Product Category which generated the most Profit:\n{cat_profit.head(1)}")
 print("\n'Bedroom' Product Category generated the most Revenue for Lewis because it was baught at a higher quantity than the rest of the Product Categories, however 'Appliances' generated the most Profit becuase profit is calculated by total revenue - exspenses, it simply means that the exspenses for 'Bedroom' Category is alot more than 'Appliances' Category")
 print("Meaning it cost Lewis alot of money to stock Products for 'Bedroom' Category")

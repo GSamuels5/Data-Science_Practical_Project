@@ -78,8 +78,7 @@ top_amount=AverageSpent.max()
 print ('The age group that generated the highest average transaction value is', top_agegroup,' and they spent a total of ',top_amount)
 #---------------------------------------------------------------------------------------------------------------------------------
 #Quetion 4.3
-#a) Group sales data by month and calculate ,Group sales data by month and calculate, 
-#and Average sales per transaction per month
+#a) Group sales data by month and calculate , Average sales per transaction per month
 
 df['Date of Purchase'] = pd.to_datetime(df['Date of Purchase'], errors='coerce')
 df['Month Num'] = df['Date of Purchase'].dt.month # converting full date to month
@@ -97,7 +96,7 @@ print("this is the average per transaction:", AvgPerTransaction)
 # Get month labels in order , to track seasonal changes
 month_labels = df.groupby('Month Num')['Month Name'].first()
 
-#------------------------------------------------------------
+
 #4.3b)Use a line graph with dual axes (left = total sales, right = average sales).
 import matplotlib.pyplot as plt
 

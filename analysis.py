@@ -68,7 +68,7 @@ print(f"\nThe average spent per customer age group is:\n{AverageSpent}" )
 
 #b) Using a dictionary, map each age group to their preferred payment method (most frequently used).
 
-preferred_payment = df.groupby('Customer Age Group')['Payment Method'].agg(lambda x :x.mode()[0])# Lambda allowes you to define a function with one input and produces its output
+preferred_payment = df.groupby('Customer Age Group')['Payment Method'].agg(lambda x :x.mode()[0])
 preferred_payment = preferred_payment.to_dict()
 print('The preferred payment method by age group is :' , preferred_payment)
 
@@ -82,7 +82,7 @@ print ('The age group that generated the highest average transaction value is', 
 
 df['Date of Purchase'] = pd.to_datetime(df['Date of Purchase'], errors='coerce')
 df['Month Num'] = df['Date of Purchase'].dt.month # converting full date to month
-df['Month Name'] = df['Date of Purchase'].dt.strftime('%b')#indicatind that month will bea string
+df['Month Name'] = df['Date of Purchase'].dt.strftime('%b')#indicating that month will be a string
 
 SalesbyMonth = df.groupby('Month Num')['Total Sale Amount (R)'].sum() #grouping the month by the sales and adding it
 print("This is sales per month : ", SalesbyMonth)
